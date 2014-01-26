@@ -1,0 +1,15 @@
+{
+	"name": "Rassslin' and Rantin'",
+	"version": "1.0.0",
+	"description": "Drupal site for Rassslin' and Rantin'",
+	"author": "KC Hunter",
+	"license": "",
+	"main": "GruntFile.js",
+	"readmeFilename": "README.md",
+	"contributors": [
+		{
+			"name": "KC Hunter",
+			"url": ""
+		}
+	]
+}
