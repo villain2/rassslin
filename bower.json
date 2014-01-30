@@ -1,7 +1,7 @@
 {
   "name": "Rassslin and Rantin",
   "version": "1.0.0",
-  "description": "Drupal Page for Rassslin and Rantin",
+  "description": "WordPress for Rassslin and Rantin",
   "main": "GruntFile.js",
   "author": "KC Hunter",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "modernizr": "~2.6.2",
     "jquery": "~2.0.3",
     "jquery.ui": "~1.10.3",
-    "angular": "~1.4.0",
+    "angular": "~1.2.0",
     "angular-ui": "~0.4.0",
     "bootstrap": "~3.0.0"
   },
