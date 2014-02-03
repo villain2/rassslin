@@ -10,11 +10,7 @@
 	Main.Directives 				= {};
 	Main.Services 					= {};
 
-	Main.init = function ()
-	{
-		var contentDiv 				= document.getElementById('content');
-		contentDiv.innerHTML		= '<main><div ng-view></div></main>';
-		//manually set up angular in page
-		angular.bootstrap(contentDiv, ['main']);
-	};
+	Main.init = function () {
+		console.log(Main);
+	}
 }(window.Main = window.Main || {} ));

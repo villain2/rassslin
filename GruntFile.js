@@ -5,7 +5,7 @@ module.exports = function (grunt)
 		copy: {
 			target: {
 				files: {
-					'bin/': ['css/**', 'img/**', 'js/**', 'fonts/**', 'index.html']
+					'bin/': ['css/**', 'img/**', 'js/**', 'fonts/**', 'partials/**', 'index.html']
 				}
 			}
 		},
@@ -38,7 +38,15 @@ module.exports = function (grunt)
 			jsConcat: {
 				files: [
 					{
-						src: ['js.modernizr.js', 'js/vendors/jquery.min.js', 'js/vendors/jquery-1.10.2.js', 'js/vendors/angular.min.js', 'js/vendors/angular-ui.min.js', 'js/Main.js'],
+						src: ['js.modernizr.js', 
+						'js/vendors/jquery.min.js', 
+						'js/vendors/jquery-1.10.2.js', 
+						'js/vendors/angular.min.js', 
+						'js/vendors/angular-ui.min.js', 
+						'js/Main.js',
+						'js/general/generalModule.js',
+						'js/general/generalConfig.js',
+						'js/general/generalController.js'],
 						dest: 'bin/js/rassslin.js'
 					}
 				]
@@ -53,8 +61,10 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-http-server');
 
 	//tasks
 	grunt.registerTask('default', ['sass', 'concat', 'copy']);
 	grunt.registerTask('dev', ['sass']);
+	grunt.registerTask('building', ['watch'])
 }

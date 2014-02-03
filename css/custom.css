@@ -105,6 +105,12 @@ a {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc0000', endColorstr='#5e1600',GradientType=0 );
     /* IE6-9 */ }
 
+.storyContainer {
+  padding: 100px 0; }
+  .storyContainer ul li {
+    line-height: 1.45em;
+    padding: 12px 0; }
+
 .socialIcons {
   width: 32px;
   height: 32px;
