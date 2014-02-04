@@ -1,19 +1,21 @@
-rrApp.config(['$routeProvider', function ($routeProvider)
+//rrApp.config(['$routeProvider', function ($routeProvider)
+(function (Configs, undefined)
 {
-	$routeProvider.
-	when('/terms_of_use',
+	Main.Modules.Main.config(function ($routeProvider)
 	{
-		controller: 'termsCtrl',
-		templateUrl: Main.PartialsPath + '/terms_of_use.html'
-	})
-	.when('/privacy_policy',
-	{
-		controller: 'privacyCtrl',
-		templateUrl: Main.PartialsPath + '/privacy_policy.html'
-	})
-	.otherwise(
-	{
-		controller: 'mainCtrl',
-		templateUrl: Main.PartialsPath + '/index.html'
-	})
-}]);
+	console.log(Main.Controllers);
+		$routeProvider.
+		when('/terms_of_use',
+		{
+			templateUrl: Main.PartialsPath + '/terms_of_use.html'
+		})
+		.when('/privacy_policy',
+		{
+			templateUrl: Main.PartialsPath + '/privacy_policy.html'
+		})
+		.otherwise(
+		{
+			templateUrl: Main.PartialsPath + '/index.html'
+		})
+	});
+}(Main.Configs = Main.Configs || {} ));

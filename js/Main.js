@@ -1,3 +1,4 @@
+'use strict';
 (function (Main, undefined)
 {
 	
@@ -10,7 +11,10 @@
 	Main.Directives 				= {};
 	Main.Services 					= {};
 
-	Main.init = function () {
-		console.log(Main);
+	Main.init = function (params) 
+	{
+		console.log(params);
+		params.container.innerHTML 		= "<rrApp><div data-ng-view></div></rrApp>";
+		angular.bootstrap(params.container, ['rrApp']);
 	}
 }(window.Main = window.Main || {} ));
