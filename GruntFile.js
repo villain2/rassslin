@@ -46,6 +46,7 @@ module.exports = function (grunt)
 						'js/Main.js',
 						'js/general/generalModule.js',
 						'js/general/generalConfig.js',
+						'js/general/generalDirective.js',
 						'js/general/generalController.js'],
 						dest: 'bin/js/rassslin.js'
 					}
