@@ -27,6 +27,8 @@
     "grunt-contrib-requirejs": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-compress": "~0.5.3",
-    "grunt-contrib": "~0.8.0"
+    "grunt-contrib": "~0.8.0",
+    "grunt-ftp-deploy": "~0.1.7",
+    "grunt-http-server": "~1.0.0"
   }
 }

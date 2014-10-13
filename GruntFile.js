@@ -52,7 +52,19 @@ module.exports = function (grunt)
 					}
 				]
 			}
-		}
+		},
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: "aoestudios.com",
+                    port: 21,
+                    authKey: "key1"
+                },
+                src: "C:/_projects/webchannel24/rassslin/bin/",
+                dest: "",
+                exclusions: []
+            }
+        }
 	});
 
 	//load plugins
@@ -63,9 +75,10 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-http-server');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
 
 	//tasks
 	grunt.registerTask('default', ['sass', 'concat', 'copy']);
 	grunt.registerTask('dev', ['sass']);
 	grunt.registerTask('building', ['watch'])
-}
+};
