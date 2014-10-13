@@ -1,6 +1,8 @@
-'use strict';
+//'use strict';
 
-var rrApp = angular.module("rrApp", ['ngRoute', 
-	'ngSanitize',
-	'rrApp.controllers', 
-	'rrApp.directives']);
+//var rrApp = angular.module("rrApp", ['ngRoute', 'rrApp.controllers']);
+
+(function (Modules, undefined)
+{
+	Modules.Main	= angular.module('rrApp', ['ngRoute']);
+}(Main.Modules = Main.Modules || {} ));

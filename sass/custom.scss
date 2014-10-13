@@ -41,15 +41,11 @@ a {
 
 .articlePostContainer {
 	padding: 20px;
-	padding-top: 80px;
 }
 
 .articlePost {
 	margin: 28px 0;
 	display: block;
-	a:hover {
-		text-decoration: none;
-	}
 
 	.articlePostBox {
 		width: 96%;
@@ -72,7 +68,7 @@ a {
 	}
 	img {
 		width: 100%;
-		height: auto;
+		height: 100%;
 		display: block;
 		border: 1px solid #dadada;
 	}
@@ -90,7 +86,7 @@ a {
 	.description {
 		line-height: 1.25em;
 		padding: 20px 0;
-		max-height: 25%;
+		max-height: 252px;
 		overflow-y: hidden;
 		p {
 			font-size: 0.85em;
@@ -132,24 +128,12 @@ a {
 }
 
 .storyContainer {
-	padding: 100px 30px;
-	ul, ol {
+	padding: 100px 0;
+	ul {
 		li {
-			font-size: 1em;
-			line-height: 2em;
+			line-height: 1.45em;
 			padding: 12px 0;
 		}
-	}
-	p {
-		font-size: 0.9em;
-		line-height: 2em;
-	}
-
-	h1, h2, h3 {
-		font-size: 1.25em;
-		line-height: 2em;
-		text-transform: uppercase;
-		font-style: bold;
 	}
 }
 
@@ -273,147 +257,4 @@ a {
 		color: #ff33ff;
 	}
 
-}
-
-/** change height for comment box **/
-.r3 {
-	min-height: 50px !important;
-}
-
-@media all and (max-width: 768px) and (min-width: 320px) {
-	#footer {
-		height: 160px;
-		text-align: center;
-	}
-}
-
-/*** STORY STYLES ***/
-.storyContainer {
-
-	/* width: 96%; */
-	background: white;
-	border-radius: 5px;
-	min-height: 500px;
-	-webkit-box-shadow: 0px 1px 18px 1px rgba(50, 50, 50, 0.25);
-	-moz-box-shadow:    0px 1px 18px 1px rgba(50, 50, 50, 0.25);
-	-ms-box-shadow:    0px 1px 18px 1px rgba(50, 50, 50, 0.25);
-	box-shadow:         0px 1px 18px 1px rgba(50, 50, 50, 0.25);
-
-	.storyBox {
-		padding: 12px 20px;
-
-		h1 {
-			@include fOpenSansCond(#333333, 3.335em, bold);
-			text-transform: uppercase;
-			letter-spacing: -0.05em;
-			margin-top: 20px;
-		}
-	}
-
-	.storyBody {
-		padding: 30px 0;
-		p {
-			line-height: 1.88em;
-			color: #332233;
-			font-size: 1.08em;
-			padding: 4px 0;
-		}
-	}
-
-	.videoContainer {
-		position: relative;
-		padding-bottom: 50%;
-		padding-top: 30px;
-		height: 0;
-		overflow: hidden;
-		margin-bottom: 30px;
-	}
-
-	.videoContainer iframe, .videoContainer object, videoContainer embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	.keywords {
-		padding: 30px 0;
-		border-top: 1px solid #dadada;
-		border-bottom: 1px solid #dadada;
-		@include fOpenSansCond('#333333', 1.55em, bold);
-	}
-
-	.postDate {
-		@include fHelvetica('#989898', 0.85em, normal);
-		padding: 12px 0;
-		border-bottom: 1px dashed #dadada;
-	}
-
-	.relatedStory {
-		margin: 30px 0;
-		padding: 12px 0;
-		border-bottom: 1px solid #dadada;
-		display: block;
-		cursor: pointer;
-		@include tTransition;
-		a:hover {
-			h1 {
-				color: red;
-			}
-		}
-	}
-
-	.osImage {
-		max-height: 125px;
-		overflow: hidden;
-		img {
-			width: 100%;
-			height: auto;
-		}
-	}
-
-	.osTitle {
-		font-family: "Open Sans Condensed", sans-serif;
-		font-size: 1.25em !important;
-		font-weight: bold !important;
-		text-transform: uppercase !important;
-		letter-spacing: -0.05em;
-	}
-
-	.osDate {
-		font-size: 0.8em;
-		padding: 8px 0;
-		color: red;
-	}
-}
-/*** END STORY STYLES ***/
-
-/*** wp updates ***/
-.entry-title {
-	font-family: "Open Sans Condensed", sans-serif;
-	font-size: 3.05em !important;
-	font-weight: bold !important;
-	text-transform: uppercase !important;
-	letter-spacing: -0.05em;
-	margin-top: 20px !important;
-	line-height: 0.9em !important;
-}
-
-.site-content {
-	padding-left: 5%;
-}
-
-.archive-header {
-	font-family: "Open Sans Condensed", sans-serif;
-	font-size: 2em;
-	font-weight: bold;
-	text-align: left;
-	max-width: 100% !important;
-
-	.archive-title {
-		margin: 0;
-		padding: 0;
-
-	}
 }

@@ -1,30 +1,21 @@
-rrApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider, $rootScope)
+//rrApp.config(['$routeProvider', function ($routeProvider)
+(function (Configs, undefined)
 {
-	$routeProvider.
-	when('/terms_of_use',
+	Main.Modules.Main.config(function ($routeProvider)
 	{
-		templateUrl: Main.PartialsPath + '/terms_of_use.html'
-	})
-	.when('/privacy_policy',
-	{
-		controller: 'privacyCtrl',
-		templateUrl: Main.PartialsPath + '/privacy_policy.html'
-	})
-	.when('/story/:storyID',
-	{
-		controller: 'storyCtrl',
-		templateUrl: Main.PartialsPath + '/story.php'
-	})
-	.when('/sections/:sectionID',
-	{
-		controller: 'navCtrl',
-		templateUrl: Main.PartialsPath + '/sections.html'
-	})
-	.otherwise(
-	{
-		controller: 'mainCtrl',
-		templateUrl: '/rassslin/wp-content/themes/rassslin/partials/index.html'
+	console.log(Main.Controllers);
+		$routeProvider.
+		when('/terms_of_use',
+		{
+			templateUrl: Main.PartialsPath + '/terms_of_use.html'
+		})
+		.when('/privacy_policy',
+		{
+			templateUrl: Main.PartialsPath + '/privacy_policy.html'
+		})
+		.otherwise(
+		{
+			templateUrl: Main.PartialsPath + '/index.html'
+		})
 	});
-
-	$locationProvider.html5Mode(false);
-}]);
+}(Main.Configs = Main.Configs || {} ));
