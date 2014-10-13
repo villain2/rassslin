@@ -1,15 +1,12 @@
-'use strict';
-
-angular.module('rrApp.controllers', []).
-controller('mainCtrl', function ($scope, $rootScope, $http, $location, $window)
+angular.module('rrApp.controllers')
+.controller('otherStoriesCtrl', function ($scope, $rootScope, $http, $location, $window, otherStoriesFactory)
 {
 	$('.articlePostContainer').fadeOut(300);
-	$http.get('/rassslin/wp-content/themes/rassslin/scripts/get_posts.php')
-	.success(function (data, status)
+	otherStoriesFactory.getOtherStories(function (results)
 	{
 		$('.articlePostContainer').fadeIn(300);
-		$rootScope.results 			= data;
-		$('#carousel-example-generic').show();
+		$scope.otherStoriesArray 		= results;
+		console.log($scope.otherStoriesArray);
 	});
 
 	$scope.getURL = function (pageID, pageName) 
