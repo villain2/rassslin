@@ -340,7 +340,8 @@ a {
     overflow: hidden; }
     .storyContainer .osImage img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin-top: -25%; }
   .storyContainer .osTitle {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.25em !important;

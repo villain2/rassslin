@@ -25,22 +25,21 @@ get_header(); ?>
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-                <img src="<?php print $path; ?>img/banners/cm_punk_leaves.jpg" alt="CM Punk Leaves WWE">
+                <img src="<?php print $path; ?>img/banners/ambrose_cena.jpg" alt="Dean Amborse shakes John Cena's Hand">
                 <div class="carousel-caption">
-                On Monday, CM Punk shockingly and abruptly left the WWE and decided to go home. Is it for real this time?
+                There are many reasons Dean Amborse should not accept anything from John Cena beyond a handshake.</div>
+            </div>
+            <div class="item">
+                <img src="<?php print $path; ?>img/banners/the_rock.jpg" alt="The Rock Returns">
+                <div class="carousel-caption">
+                The Rock came back to Monday Night Raw, surprising everyone in the WWE Universe. Will this help Rusev and is this the last we'll see of The Rock?
                 </div>
             </div>
             <div class="item">
-                <img src="<?php print $path; ?>img/banners/sting_to_wwe.jpg" alt="Sting to WWE">
+                <img src="<?php print $path; ?>img/banners/ring_of_honor.jpg" alt="Is Ring of Honor the best">
                 <div class="carousel-caption">
-                Rumors are that The Stinger is finally making that long walk to WWE. What does this mean for WrestleMania XXX? Are we going to see the Stinger vs. Taker?
-                </div>
-            </div>
-            <div class="item">
-                <img src="<?php print $path; ?>img/banners/royal_rumble.jpg" alt="Royal Rumble Review">
-                <div class="carousel-caption">
-                The Royal Rumble Review.<br>
-                Match-by-match reviews and summaries for the entire show. And there is a lot to talk about!
+                Ring of Honor<br>
+                With WWE disappointing a large part of it's fanbase on a weekly basis and TNA struggling to find an identity, is Ring of Honor the best company in North America?
                 </div>
             </div>
         </div>
@@ -59,7 +58,7 @@ get_header(); ?>
       <div class="articlePostContainer">
         <div class="row">
         	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-					$args = array( 'post_type' => 'post', 'posts_per_page' => 9, 'paged' => $paged );
+					$args = array( 'post_type' => 'post', 'posts_per_page' => 18, 'paged' => $paged );
 					$wp_query = new WP_Query($args);
 					while ( have_posts() ) : the_post(); ?>
             			
