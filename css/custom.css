@@ -23,11 +23,14 @@ a {
   background: url("../img/cream_pixels.png") repeat top; }
 
 .articlePostContainer {
-  padding: 20px; }
+  padding: 20px;
+  padding-top: 80px; }
 
 .articlePost {
   margin: 28px 0;
   display: block; }
+  .articlePost a:hover {
+    text-decoration: none; }
   .articlePost .articlePostBox {
     width: 96%;
     background: white;
@@ -47,7 +50,7 @@ a {
     overflow: hidden; }
   .articlePost img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
     border: 1px solid #dadada; }
   .articlePost p, .articlePost h1, .articlePost h2 {
@@ -63,7 +66,7 @@ a {
   .articlePost .description {
     line-height: 1.25em;
     padding: 20px 0;
-    max-height: 252px;
+    max-height: 25%;
     overflow-y: hidden; }
     .articlePost .description p {
       font-size: 0.85em;
@@ -106,10 +109,19 @@ a {
     /* IE6-9 */ }
 
 .storyContainer {
-  padding: 100px 0; }
-  .storyContainer ul li {
-    line-height: 1.45em;
+  padding: 100px 30px; }
+  .storyContainer ul li, .storyContainer ol li {
+    font-size: 1em;
+    line-height: 2em;
     padding: 12px 0; }
+  .storyContainer p {
+    font-size: 0.9em;
+    line-height: 2em; }
+  .storyContainer h1, .storyContainer h2, .storyContainer h3 {
+    font-size: 1.25em;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-style: bold; }
 
 .socialIcons {
   width: 32px;
@@ -247,3 +259,119 @@ a {
   #footer a:hover {
     text-decoration: underline;
     color: #ff33ff; }
+
+/** change height for comment box **/
+.r3 {
+  min-height: 50px !important; }
+
+@media all and (max-width: 768px) and (min-width: 320px) {
+  #footer {
+    height: 160px;
+    text-align: center; } }
+/*** STORY STYLES ***/
+.storyContainer {
+  /* width: 96%; */
+  background: white;
+  border-radius: 5px;
+  min-height: 500px;
+  -webkit-box-shadow: 0px 1px 18px 1px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow: 0px 1px 18px 1px rgba(50, 50, 50, 0.25);
+  -ms-box-shadow: 0px 1px 18px 1px rgba(50, 50, 50, 0.25);
+  box-shadow: 0px 1px 18px 1px rgba(50, 50, 50, 0.25); }
+  .storyContainer .storyBox {
+    padding: 12px 20px; }
+    .storyContainer .storyBox h1 {
+      font-family: "Open Sans Condensed", sans-serif;
+      color: #333333;
+      font-size: 3.335em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+      margin-top: 20px; }
+  .storyContainer .storyBody {
+    padding: 30px 0; }
+    .storyContainer .storyBody p {
+      line-height: 1.88em;
+      color: #332233;
+      font-size: 1.08em;
+      padding: 4px 0; }
+  .storyContainer .videoContainer {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 30px; }
+  .storyContainer .videoContainer iframe, .storyContainer .videoContainer object, .storyContainer videoContainer embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .storyContainer .keywords {
+    padding: 30px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: "#333333";
+    font-size: 1.55em;
+    font-weight: bold; }
+  .storyContainer .postDate {
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: "#989898";
+    font-size: 0.85em;
+    font-weight: normal;
+    padding: 12px 0;
+    border-bottom: 1px dashed #dadada; }
+  .storyContainer .relatedStory {
+    margin: 30px 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #dadada;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -ms-transition: all 0.75s;
+    transition: all 0.75s; }
+    .storyContainer .relatedStory a:hover h1 {
+      color: red; }
+  .storyContainer .osImage {
+    max-height: 125px;
+    overflow: hidden; }
+    .storyContainer .osImage img {
+      width: 100%;
+      height: auto; }
+  .storyContainer .osTitle {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.25em !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: -0.05em; }
+  .storyContainer .osDate {
+    font-size: 0.8em;
+    padding: 8px 0;
+    color: red; }
+
+/*** END STORY STYLES ***/
+/*** wp updates ***/
+.entry-title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3.05em !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.05em;
+  margin-top: 20px !important;
+  line-height: 0.9em !important; }
+
+.site-content {
+  padding-left: 5%; }
+
+.archive-header {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left;
+  max-width: 100% !important; }
+  .archive-header .archive-title {
+    margin: 0;
+    padding: 0; }
